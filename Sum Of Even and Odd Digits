@@ -1,0 +1,21 @@
+# Take the number as input
+number = int(input())
+
+# Start even and odd sums at 0
+even_sum = 0
+odd_sum = 0
+
+# Go through each digit one by one
+while number > 0:
+    last_digit = number % 10      # Get the last digit
+
+    # Check if the digit is even
+    if last_digit % 2 == 0:
+        even_sum = even_sum + last_digit
+    else:
+        odd_sum = odd_sum + last_digit
+
+    number = number // 10         # Remove the last digit
+
+# Print even sum first, then odd sum
+print(even_sum, odd_sum)
