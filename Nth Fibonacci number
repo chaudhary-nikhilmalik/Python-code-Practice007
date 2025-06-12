@@ -1,0 +1,19 @@
+n = int(input())     # Take input for the position (n)
+
+# First two Fibonacci numbers
+first = 1
+second = 1
+
+# If n is 1 or 2, answer is 1
+if n == 1 or n == 2:
+    print(1)
+else:
+    # Start calculating from the 3rd term
+    count = 3
+    while count <= n:
+        next_term = first + second    # Add last two terms
+        first = second                # Move one step forward
+        second = next_term
+        count = count + 1
+
+    print(second)  # This is the nth Fibonacci number
