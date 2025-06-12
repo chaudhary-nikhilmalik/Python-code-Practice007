@@ -1,0 +1,12 @@
+while True:              # Loop starts
+    operation = input()  # Ask for operation number
+    
+    if operation == '1':
+        # Do addition
+    elif operation == '2':
+        # Do subtraction
+    ...
+    elif operation == '6':
+        break            # STOP the loop
+    else:
+        print("Invalid Operation")
