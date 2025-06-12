@@ -1,12 +1,41 @@
-while True:              # Loop starts
-    operation = input()  # Ask for operation number
-    
-    if operation == '1':
-        # Do addition
-    elif operation == '2':
-        # Do subtraction
-    ...
-    elif operation == '6':
-        break            # STOP the loop
+while True:
+    # Ask for the operation number
+    op = int(input())
+
+    # Addition
+    if op == 1:
+        a = int(input())
+        b = int(input())
+        print(a + b)
+
+    # Subtraction
+    elif op == 2:
+        a = int(input())
+        b = int(input())
+        print(a - b)
+
+    # Multiplication
+    elif op == 3:
+        a = int(input())
+        b = int(input())
+        print(a * b)
+
+    # Division (quotient)
+    elif op == 4:
+        a = int(input())
+        b = int(input())
+        print(a // b)
+
+    # Remainder
+    elif op == 5:
+        a = int(input())
+        b = int(input())
+        print(a % b)
+
+    # Exit the program
+    elif op == 6:
+        break
+
+    # If operation number is not 1 to 6
     else:
-        print("Invalid Operation")
+        print("Operation is invalid")
